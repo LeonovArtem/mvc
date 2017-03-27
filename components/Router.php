@@ -39,7 +39,7 @@ class Router
                 //Создать объект, вызвать метод(action)
 
                 $controllerObject = new $controllerName;
-                $result = $controllerObject->$actionName;
+                $result = $controllerObject->$actionName();
                 if ($result != null) {
                     break;
                 }
